@@ -1,0 +1,208 @@
+body, input, button, small {
+    font-family: 'Josefin Sans', sans-serif;
+}
+body { margin: 0; }
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
+
+.left-side {
+    padding: 65px 20% 0 20%;
+    position: relative;
+    background: url("images/bg-pattern-desktop.svg") border-box no-repeat top,
+                linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+header {
+    margin-bottom: 110px;
+}
+
+.logo {
+    width: 155px;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: 600;
+    letter-spacing: 15px;
+}
+h1:first-line {
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(0, 36%, 70%);
+    line-height: 1.5;
+}
+
+.input-div {
+    margin-top: 55px;
+    position: relative;
+}
+
+input, button {
+    height: 50px;
+    border-radius: 50px;
+    border: solid hsl(0, 36%, 70%);
+    color: hsl(0, 36%, 70%);
+}
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    border-width: 1px;
+    vertical-align: top;
+    background-color: transparent;
+}
+
+button {
+    position: absolute;
+    right: 0;
+    width: 15%;
+    border-width: 0;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 0 10px 15px hsla(0, 49%, 81%, 0.5);
+    transition: width 0.2s cubic-bezier(.18,.89,.32,1.28);
+    cursor: pointer;
+}
+
+input:focus {
+    box-shadow: hsla(0, 36%, 70%, 0.829) 0 2px 2px 2px;
+}
+button:hover {
+    background: linear-gradient(135deg, hsl(0, 100%, 83%), hsl(0, 100%, 74%));
+    width: 23%;
+}
+
+  
+/* INPUT MESSAGE */
+.message {
+    position: relative; top: 10px;
+    padding-left: 7%;
+}
+
+.error-icon {
+    visibility: hidden;
+    position: absolute; top: 55px;
+}
+
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+/* MOBILE DESIGN */
+@media screen and (max-width: 618px) {
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .girl-img-wrapper {
+        order: 1;
+        height: 450px; width: 100%;
+    }
+    .girl-img {
+        max-width: 100%;
+    }
+
+    .left-side {
+        order: 2;
+        padding: 65px 20% 0 20%;
+        position: relative;
+        background: url("images/bg-pattern-desktop.svg") border-box no-repeat top,
+                    linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    }
+    
+    header {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 50px;
+        font-weight: 600;
+        letter-spacing: 15px;
+    }
+    h1:first-line {
+        font-weight: 300;
+        color: hsl(0, 36%, 70%);
+    }
+    
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        line-height: 1.5;
+    }
+    
+    .input-div {
+        margin-top: 55px;
+        position: relative;
+    }
+    
+    input, button {
+        height: 50px;
+        border-radius: 50px;
+        border: solid hsl(0, 36%, 70%);
+        color: hsl(0, 36%, 70%);
+    }
+    input {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 30px;
+        border-width: 1px;
+        vertical-align: top;
+        background-color: transparent;
+    }
+    
+    button {
+        position: absolute;
+        right: 0;
+        width: 15%;
+        border-width: 0;
+        background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        box-shadow: 0 10px 15px hsla(0, 49%, 81%, 0.5);
+        transition: width 0.2s cubic-bezier(.18,.89,.32,1.28);
+        cursor: pointer;
+    }
+    
+    input:focus {
+        box-shadow: hsla(0, 36%, 70%, 0.829) 0 2px 2px 2px;
+    }
+    button:hover {
+        background: linear-gradient(135deg, hsl(0, 100%, 83%), hsl(0, 100%, 74%));
+        width: 23%;
+    }
+    
+      
+    /* INPUT MESSAGE */
+    .message {
+        position: relative; top: 10px;
+        padding-left: 7%;
+    }
+    
+    .error-icon {
+        visibility: hidden;
+        position: absolute; top: 55px;
+    }
+    
+    
+    
+    
+    .attribution { 
+        font-size: 11px; text-align: center; 
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%);
+    }
+}
