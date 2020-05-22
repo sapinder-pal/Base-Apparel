@@ -1,10 +1,12 @@
 const email = document.querySelector('#email');
-const btn = document.querySelector("button");
 const message = document.querySelector("small");
 const errIcon = document.querySelector(".error-icon");
+const form = document.querySelector("form");
 
-btn.addEventListener("click",(event)=>{
-
+form.onsubmit = (event)=> 
+{
+    event.preventDefault();
+    
     if(email.validity.valid){
         message.textContent = "Done!";
         message.style.color = "hsl(308, 96%, 73%)";
@@ -17,4 +19,4 @@ btn.addEventListener("click",(event)=>{
         
         errIcon.style.visibility = "visible";
     }
-})
+}

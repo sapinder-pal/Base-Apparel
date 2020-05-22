@@ -16,7 +16,7 @@ body { margin: 0; }
 }
 
 header {
-    margin-bottom: 110px;
+    margin-bottom: 100px;
 }
 
 .logo {
@@ -40,7 +40,7 @@ p {
     line-height: 1.5;
 }
 
-.input-div {
+form {
     margin-top: 55px;
     position: relative;
 }
@@ -83,7 +83,7 @@ button:hover {
 /* INPUT MESSAGE */
 .message {
     position: relative; top: 10px;
-    padding-left: 7%;
+    padding-left: 30px;
 }
 
 .error-icon {
